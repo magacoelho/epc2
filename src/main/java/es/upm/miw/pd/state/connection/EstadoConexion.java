@@ -1,8 +1,11 @@
 package es.upm.miw.pd.state.connection;
 
 public abstract class EstadoConexion {
-	public abstract Estado getEstado(Conexion conexion); 
-    public abstract void abrir(Conexion conexion); 
+	protected Estado estado;
+	public  Estado getEstado(Conexion conexion){
+		return estado;
+	} 
+	public abstract void abrir(Conexion conexion); 
     public abstract void cerrar(Conexion conexion) ;
     public abstract void parar(Conexion conexion);
     public abstract void iniciar(Conexion conexion); 
