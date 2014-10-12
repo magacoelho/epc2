@@ -3,9 +3,8 @@ package es.upm.miw.pd.singleton.factory.solution;
 import java.util.HashMap;
 import java.util.Map;
 
-public class FactoryReferences {
+public final class FactoryReferences {
     private Map<String, Integer> references;
-    
     private int reference;
     private static FactoryReferences factoryReferences=null;
     
@@ -27,5 +26,12 @@ public class FactoryReferences {
     public void removeReference(String key) {
         this.references.remove(key);
     }
+    
+    public static FactoryReferences getFactory(){
+    	if (FactoryReferences.factoryReferences == null) { 
+    		FactoryReferences.factoryReferences = new FactoryReferences(); 
+          } 
+       return FactoryReferences.factoryReferences; 
+  }
 
 }
