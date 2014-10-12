@@ -4,10 +4,21 @@ public class Numero extends Expression{
 	private int valor;
     
 	
+	private Numero(int valor) {
+		super();
+		this.valor = valor;
+	}
+   
+	
+	public int getValor() {
+		return valor;
+	}
+
+
 	@Override
 	public int operar() {
 		// TODO Auto-generated method stub
-		return 0;
+		return this.getValor();
 	}
 
 	@Override
