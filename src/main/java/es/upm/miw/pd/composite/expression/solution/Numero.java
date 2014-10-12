@@ -24,7 +24,7 @@ public class Numero extends Expression{
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return null;
+		return String.valueOf(this.getValor());
 	}
 	
 	  
