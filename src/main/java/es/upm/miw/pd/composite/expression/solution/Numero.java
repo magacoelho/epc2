@@ -4,8 +4,8 @@ public class Numero extends Expression{
 	private int valor;
     
 	
-	private Numero(int valor) {
-		super();
+	public Numero(int valor) {
+	
 		this.valor = valor;
 	}
    
