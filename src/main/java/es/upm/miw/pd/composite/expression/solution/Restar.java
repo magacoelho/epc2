@@ -4,7 +4,7 @@ public class Restar extends Operation{
    
 	public Restar(Expression expression1, Expression expression2) {
 		super(expression1, expression2);
-		this.sign="+";
+		this.sign="-";
 	}
 
 	@Override
