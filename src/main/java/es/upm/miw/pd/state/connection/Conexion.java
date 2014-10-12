@@ -11,8 +11,12 @@ public class Conexion {
         this.link = link;
         this.estado = Estado.CERRADO;
     }
+   
+  	protected void setEstadoConexion(EstadoConexion estadoConexion) {
+		this.estadoConexion = estadoConexion;
+	}
 
-    public Link getLink() {
+	public Link getLink() {
         return link;
     }
 
