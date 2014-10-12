@@ -3,19 +3,14 @@ package es.upm.miw.pd.state.connection;
 public class Preparado extends EstadoConexion {
     public Preparado(){
     	estado= Estado.PREPARADO;
-    }
-	@Override
-	public Estado getEstado(Conexion conexion) {
-		return Estado.PREPARADO;
-	}
-
+     }
+	
 	@Override
 	public void abrir(Conexion conexion) {
 		conexion.setEstadoConexion(this);
 
 	}
-
-	@Override
+    @Override
 	public void cerrar(Conexion conexion) {
 		conexion.setEstadoConexion(new Cerrado());
 
