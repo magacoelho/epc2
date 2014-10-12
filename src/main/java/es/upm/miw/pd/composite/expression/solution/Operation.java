@@ -1,18 +1,21 @@
 package es.upm.miw.pd.composite.expression.solution;
 
-public class Operation extends Expression {
+public abstract class Operation extends Expression {
     private Expression expression1;
     private Expression expression2;
-	@Override
-	public int operar() {
-		// TODO Auto-generated method stub
-		return 0;
+    protected String sign;
+    
+	private Operation(Expression expression1, Expression expression2) {
+		super();
+		this.expression1 = expression1;
+		this.expression2 = expression2;
 	}
 
 	@Override
+	public  abstract  int operar();
+	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
-		return null;
+		return "(" + expression1.toString() + sign + expression2.toString() + ")";
 	}
 
 }
