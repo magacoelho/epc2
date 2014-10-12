@@ -5,12 +5,7 @@ public class Cerrado extends EstadoConexion {
 	public Cerrado(){
 		estado= Estado.CERRADO;
     }
-	@Override
-	public Estado getEstado(Conexion conexion) {
-		return conexion.getEstado();
-		
-	}
-
+	
 	@Override
 	public void abrir(Conexion conexion) {
 		conexion.setEstadoConexion(new Preparado());
@@ -20,7 +15,7 @@ public class Cerrado extends EstadoConexion {
 	@Override
 	public void cerrar(Conexion conexion) {
 		
-		conexion.setEstadoConexion(new Cerrado());
+		conexion.setEstadoConexion(this);
 	}
 
 	@Override
