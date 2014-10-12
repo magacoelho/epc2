@@ -1,6 +1,6 @@
 package es.upm.miw.pd.composite.expression.solution;
 
-public class Numero extends Expression{
+public class Numero extends Expresion{
 	private int valor;
     
 	

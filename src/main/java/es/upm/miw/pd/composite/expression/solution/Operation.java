@@ -1,11 +1,11 @@
 package es.upm.miw.pd.composite.expression.solution;
 
-public abstract class Operation extends Expression {
-    protected Expression expression1;
-    protected Expression expression2;
+public abstract class Operation extends Expresion {
+    protected Expresion expression1;
+    protected Expresion expression2;
     protected String sign;
     
-	public Operation(Expression expression1, Expression expression2) {
+	public Operation(Expresion expression1, Expresion expression2) {
 		super();
 		this.expression1 = expression1;
 		this.expression2 = expression2;

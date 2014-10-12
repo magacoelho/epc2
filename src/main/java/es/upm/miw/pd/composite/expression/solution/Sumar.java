@@ -2,7 +2,7 @@ package es.upm.miw.pd.composite.expression.solution;
 
 public class Sumar extends Operation{
    
-	public Sumar(Expression expression1, Expression expression2) {
+	public Sumar(Expresion expression1, Expresion expression2) {
 		super(expression1, expression2);
 		this.sign="+";
 	}
