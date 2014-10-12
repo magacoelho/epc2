@@ -5,9 +5,9 @@ import java.util.Map;
 
 public class FactoryReferences {
     private Map<String, Integer> references;
-
+    
     private int reference;
-
+    private static FactoryReferences factoryReferences=null;
     public FactoryReferences() {
         this.references = new HashMap<>();
         this.reference = 0;
