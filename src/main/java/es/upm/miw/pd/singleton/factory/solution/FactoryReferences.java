@@ -8,7 +8,8 @@ public class FactoryReferences {
     
     private int reference;
     private static FactoryReferences factoryReferences=null;
-    public FactoryReferences() {
+    
+    private  FactoryReferences() {
         this.references = new HashMap<>();
         this.reference = 0;
     }
