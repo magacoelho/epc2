@@ -4,9 +4,7 @@ public abstract class Expression {
 	public abstract  int operar();
 
 	@Override
-	public String toString(){
-		return this.toString();
-	}
+	public abstract String toString();
    
 
 }
