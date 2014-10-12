@@ -4,6 +4,7 @@ public class Conexion {
     private Estado estado;
 
     private Link link;
+    private EstadoConexion estadoConexion;
 
     public Conexion(Link link) {
         assert link != null;
