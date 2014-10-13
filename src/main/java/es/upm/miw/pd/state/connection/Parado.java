@@ -35,7 +35,7 @@ public class Parado extends EstadoConexion {
 	}
 
 	@Override
-	public void enviar(Conexion conexion) {
+	public void enviar(Conexion conexion, String msg) {
 		// TODO Auto-generated method stub
 
 	}
