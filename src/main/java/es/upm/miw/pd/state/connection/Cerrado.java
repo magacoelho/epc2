@@ -37,7 +37,7 @@ public class Cerrado extends EstadoConexion {
 	}
 
 	@Override
-	public void recibir(Conexion conexion) {
+	public void recibir(Conexion conexion, int respuesta) {
 		// TODO Auto-generated method stub
 		throw new UnsupportedOperationException("Acción no permitida... ");	
 	}

@@ -2,47 +2,38 @@ package es.upm.miw.pd.state.connection;
 
 public class Esperando extends EstadoConexion {
 
-	
-	
-
-	@Override
-	public Estado getEstado(Conexion conexion) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
 	@Override
 	public void abrir(Conexion conexion) {
-		// TODO Auto-generated method stub
+		 throw new UnsupportedOperationException("Acción no permitida... ");
 
 	}
 
 	@Override
 	public void cerrar(Conexion conexion) {
-		// TODO Auto-generated method stub
+		throw new UnsupportedOperationException("Acción no permitida... ");
 
 	}
 
 	@Override
 	public void parar(Conexion conexion) {
-		// TODO Auto-generated method stub
+		throw new UnsupportedOperationException("Acción no permitida... ");
 
 	}
 
 	@Override
 	public void iniciar(Conexion conexion) {
-		// TODO Auto-generated method stub
+		throw new UnsupportedOperationException("Acción no permitida... ");
 
 	}
 
 	@Override
 	public void enviar(Conexion conexion) {
-		// TODO Auto-generated method stub
+		throw new UnsupportedOperationException("Acción no permitida... ");
 
 	}
 
 	@Override
-	public void recibir(Conexion conexion) {
+	public void recibir(Conexion conexion, int respuesta) {
 		// TODO Auto-generated method stub
 
 	}

@@ -35,7 +35,7 @@ public class Preparado extends EstadoConexion {
 	}
 
 	@Override
-	public void recibir(Conexion conexion) {
+	public void recibir(Conexion conexion,  int respuesta) {
 		 throw new UnsupportedOperationException("Acción no permitida... ");
 	}
 
