@@ -1,7 +1,9 @@
 package es.upm.miw.pd.state.connection;
 
 public class Esperando extends EstadoConexion {
-
+    public Esperando(){
+    	estado= Estado.ESPERANDO;
+    }
 	@Override
 	public void abrir(Conexion conexion) {
 		 throw new UnsupportedOperationException("Acción no permitida... ");
