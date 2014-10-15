@@ -3,7 +3,7 @@ package es.upm.miw.pd.factoryMethod.naturalNumber;
 public class NaturalNumber {
 
 	private int value;
-	protected String[] textValue;
+	protected static String[] textValue;
 
 	public NaturalNumber() {
 		
