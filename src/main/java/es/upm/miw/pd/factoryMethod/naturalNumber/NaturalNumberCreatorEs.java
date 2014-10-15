@@ -5,7 +5,7 @@ public class NaturalNumberCreatorEs extends NaturalNumberCreator {
 	@Override
 	public NaturalNumber create() {
 		// TODO Auto-generated method stub
-		return null;
+		return new NaturalNumberEs(1);
 	}
 
 }
