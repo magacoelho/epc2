@@ -1,10 +1,7 @@
 package es.upm.miw.pd.factoryMethod.naturalNumber;
 
-public class NaturalNumberCreator {
+public abstract class NaturalNumberCreator {
 
-	public NaturalNumber create() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	public abstract NaturalNumber create() ;
 
 }
