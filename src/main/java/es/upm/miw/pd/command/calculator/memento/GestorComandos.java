@@ -1,9 +1,9 @@
-package es.upm.miw.pd.command.calculator;
+package es.upm.miw.pd.command.calculator.memento;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import es.upm.miw.pd.command.calculator.Comando;
+import es.upm.miw.pd.command.calculator.memento.Comando;
 
 public class GestorComandos {
     private Map<String, Comando> comandos = new HashMap<>();
