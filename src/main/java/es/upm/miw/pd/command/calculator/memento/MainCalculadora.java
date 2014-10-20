@@ -16,7 +16,9 @@ public class MainCalculadora {
         this.gestor.add(new ComandoRestar(calc));
         this.gestor.add(new ComandoIniciar(calc));
         this.gestor.add(new ComandoImprimir(calc));
-        this.gestor.add(new ComandoGuardar(calc));
+        GestorMementos<MementoCalculadora> gm = new GestorMementos();
+        this.gestor.add(new ComandoGuardar(calc,gm));
+        this.gestor.add(new ComandoDeshacer(calc,gm));
     }
 
     public void ejecutar() {
