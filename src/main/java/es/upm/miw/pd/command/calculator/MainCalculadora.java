@@ -1,9 +1,9 @@
 package es.upm.miw.pd.command.calculator;
 
-import es.upm.miw.pd.command.calculator.solution.ComandoImprimir;
-import es.upm.miw.pd.command.calculator.solution.ComandoIniciar;
-import es.upm.miw.pd.command.calculator.solution.ComandoRestar;
-import es.upm.miw.pd.command.calculator.solution.ComandoSumar;
+import es.upm.miw.pd.command.calculator.ComandoImprimir;
+import es.upm.miw.pd.command.calculator.ComandoIniciar;
+import es.upm.miw.pd.command.calculator.ComandoRestar;
+import es.upm.miw.pd.command.calculator.ComandoSumar;
 import upm.jbb.IO;
 
 public class MainCalculadora {
