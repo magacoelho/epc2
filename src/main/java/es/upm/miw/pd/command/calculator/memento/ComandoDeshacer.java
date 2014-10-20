@@ -14,7 +14,7 @@ public class ComandoDeshacer extends ComandoAbs {
     @Override
     public void execute() {
 		CalculadoraMementable c = (CalculadoraMementable) calculadora;
-		c.deshacer(this.gm.getMemento((String) IO.in.select(gm.keys(), "Restaurar")));
+		c.deshacer(this.gm.getMemento((String) IO.in.select(gm.keys(), "Deshacer")));
 		
 	}
 
