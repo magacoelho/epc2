@@ -1,17 +1,17 @@
 package es.upm.miw.pd.command.calculator.memento;
 
-public class CalculadoraMementable extends Calculadora implements Mementable{
+public class CalculadoraMementable extends Calculadora implements Mementable<MementoCalculadora>{
 
 	@Override
-	public Object createMemento() {
+	public MementoCalculadora guardar() {
 		// TODO Auto-generated method stub
-		return null;
+		return new MementoCalculadora(this.getTotal());
 	}
 
 	@Override
-	public void restoreMemento(Object memento) {
-		// TODO Auto-generated method stub
-		
+	public void deshacer(MementoCalculadora memento) {
+		this.setTotal(memento.getValor());
 	}
 
+	
 }

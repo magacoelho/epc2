@@ -1,8 +1,8 @@
 package es.upm.miw.pd.command.calculator.memento;
 
 public interface Mementable<T> {
-    T createMemento();
+    T guardar();
 
-    void restoreMemento(T memento);
+    void deshacer(T memento);
 
 }
