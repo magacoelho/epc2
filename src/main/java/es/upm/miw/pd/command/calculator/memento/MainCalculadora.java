@@ -10,12 +10,13 @@ public class MainCalculadora {
     private GestorComandos gestor;
 
     public MainCalculadora() {
-        Calculadora calc = new Calculadora();
+        CalculadoraMementable calc = new CalculadoraMementable();
         this.gestor = new GestorComandos();
         this.gestor.add(new ComandoSumar(calc));
         this.gestor.add(new ComandoRestar(calc));
         this.gestor.add(new ComandoIniciar(calc));
         this.gestor.add(new ComandoImprimir(calc));
+        this.gestor.add(new ComandoGuardar(calc));
     }
 
     public void ejecutar() {
