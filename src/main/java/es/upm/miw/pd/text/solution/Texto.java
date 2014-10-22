@@ -21,4 +21,10 @@ public class Texto extends Compuesto{
 		
 	}
 
+	@Override
+	protected void borrar(Componente c) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

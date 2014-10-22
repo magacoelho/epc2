@@ -25,8 +25,17 @@ public class Parrafo extends Compuesto {
 
 	@Override
 	public String dibujar(boolean b) {
+		String parrafo;
+		if(b)
+		{}
+		else{}
 		// TODO Auto-generated method stub
 		return null;
+	}
+	@Override
+	protected void borrar(Componente c) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
