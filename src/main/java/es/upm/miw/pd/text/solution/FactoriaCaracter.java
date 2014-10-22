@@ -1,6 +1,11 @@
 package es.upm.miw.pd.text.solution;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public  class FactoriaCaracter {
+	private final Map<Character, Caracter> map = new HashMap<Character, Caracter>(); 
+
     private static FactoriaCaracter factoriaCaracter=null;
 	private FactoriaCaracter(){
 		
@@ -11,9 +16,14 @@ public  class FactoriaCaracter {
 		else
 	       return FactoriaCaracter.factoriaCaracter;		
 	}
-	public Componente get(char c) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	public Caracter get(Character key) {
+		if (map.containsKey(key)) { 
+              return map.get(key); 
+          } else { 
 
+           Caracter pl = new Caracter(key); 
+           map.put(key, pl); 
+           return pl; 
+       } 
+    } 
 }
