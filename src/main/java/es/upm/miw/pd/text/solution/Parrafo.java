@@ -10,8 +10,8 @@ public class Parrafo extends Compuesto {
 
 	@Override
 	public boolean isComposite() {
-		// TODO Auto-generated method stub
-		return false;
+		
+		return true;
 	}
 
 	@Override
