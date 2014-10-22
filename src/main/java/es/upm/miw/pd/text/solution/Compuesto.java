@@ -1,7 +1,8 @@
 package es.upm.miw.pd.text.solution;
 
-public abstract class Compuesto extends Componente{
+import java.util.List;
 
-	
+public abstract class Compuesto extends Componente{
+	protected List<Componente> componentes;	
 
 }

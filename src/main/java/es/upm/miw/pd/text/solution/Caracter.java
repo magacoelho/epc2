@@ -12,12 +12,14 @@ public class Caracter extends Componente{
 	}
 	@Override
 	public boolean isComposite() {
-		// TODO Auto-generated method stub
+		
 		return false;
 	}
 	@Override
 	public String dibujar(boolean b) {
 		// TODO Auto-generated method stub
+		if(b)
+			return String.valueOf(c).toUpperCase();
 		return String.valueOf(c);
 	}
 
