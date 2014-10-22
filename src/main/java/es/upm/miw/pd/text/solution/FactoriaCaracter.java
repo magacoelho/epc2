@@ -16,7 +16,7 @@ public  class FactoriaCaracter {
 		else
 	       return FactoriaCaracter.factoriaCaracter;		
 	}
-	public Caracter get(Character key) {
+	public Caracter get(char key) {
 		if (map.containsKey(key)) { 
               return map.get(key); 
           } else { 
