@@ -16,9 +16,9 @@ public class Caracter extends Componente{
 		return false;
 	}
 	@Override
-	public void dibujar(boolean b) {
+	public String dibujar(boolean b) {
 		// TODO Auto-generated method stub
-		
+		return String.valueOf(c);
 	}
 
 }

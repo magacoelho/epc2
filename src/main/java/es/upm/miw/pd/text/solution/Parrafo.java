@@ -15,9 +15,9 @@ public class Parrafo extends Compuesto {
 	}
 
 	@Override
-	public void dibujar(boolean b) {
+	public String dibujar(boolean b) {
 		// TODO Auto-generated method stub
-		
+		return null;
 	}
 
 }
