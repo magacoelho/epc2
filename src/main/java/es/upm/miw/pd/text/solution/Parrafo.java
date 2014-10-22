@@ -18,12 +18,6 @@ public class Parrafo extends Compuesto {
 	}
 
 	@Override
-	public boolean isComposite() {
-		
-		return true;
-	}
-
-	@Override
 	public String dibujar(boolean b) {
 		String parrafo ="";
 		for (Componente componente : componentes) {
@@ -32,10 +26,5 @@ public class Parrafo extends Compuesto {
 		}
 		return parrafo+"\n";
 	}
-	@Override
-	protected void borrar(Componente c) {
-		componentes.remove(c);
-		
-	}
-
+	
 }

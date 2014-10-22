@@ -15,12 +15,6 @@ public class Texto extends Compuesto{
 	}
 
 	@Override
-	public boolean isComposite() {
-		// TODO Auto-generated method stub
-		return true;
-	}
-
-	@Override
 	public String dibujar(boolean b) {
 		String texto ="";
 		for (Componente componente : componentes) {
@@ -30,11 +24,6 @@ public class Texto extends Compuesto{
 		return texto+"---o---\n";
 		
 	}
-
-	@Override
-	protected void borrar(Componente c) {
-		componentes.remove(c);
-		
-	}
-
 }
+
+	

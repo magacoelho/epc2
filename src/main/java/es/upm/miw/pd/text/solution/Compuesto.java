@@ -5,5 +5,12 @@ import java.util.List;
 
 public abstract class Compuesto extends Componente{
 	protected List<Componente> componentes = new ArrayList<Componente>();	
-    protected abstract void borrar(Componente c);
+    
+    @Override
+	public boolean isComposite() {
+		return true;
+	}
+    protected void borrar(Componente c) {
+		componentes.remove(c);
+	}
 }
