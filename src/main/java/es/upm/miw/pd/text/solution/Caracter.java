@@ -5,5 +5,20 @@ public class Caracter extends Componente{
 	public Caracter(char key) {
 		
 	}
+	@Override
+	public void add(Componente c) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public boolean isComposite() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	@Override
+	public void dibujar(boolean b) {
+		// TODO Auto-generated method stub
+		
+	}
 
 }
