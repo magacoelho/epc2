@@ -1,9 +1,9 @@
 package es.upm.miw.pd.text.solution;
 
 public class Caracter extends Componente{
-    private char c;
+    private Character caracter;
 	public Caracter(char key) {
-		
+		this.caracter = Character.valueOf(key);
 	}
 	@Override
 	public void add(Componente c) {
@@ -19,8 +19,8 @@ public class Caracter extends Componente{
 	public String dibujar(boolean b) {
 		// TODO Auto-generated method stub
 		if(b)
-			return String.valueOf(c).toUpperCase();
-		return String.valueOf(c);
+			return String.valueOf(caracter).toUpperCase();
+		return String.valueOf(caracter);
 	}
 
 }
