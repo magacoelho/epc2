@@ -12,8 +12,8 @@ public  class FactoriaCaracter {
 	}
     public static FactoriaCaracter getFactoria() {
 		if(FactoriaCaracter.factoriaCaracter==null)
-		   return new FactoriaCaracter();
-		else
+			FactoriaCaracter.factoriaCaracter=new  FactoriaCaracter();
+
 	       return FactoriaCaracter.factoriaCaracter;		
 	}
 	public Caracter get(char c) {
