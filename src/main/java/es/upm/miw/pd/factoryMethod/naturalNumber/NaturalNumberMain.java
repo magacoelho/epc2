@@ -9,7 +9,7 @@ public class NaturalNumberMain {
      public void tipoCreador() { 
        this.creador = (NaturalNumberCreator) IO.in.select(creadores, "Elige un creador"); 
 	    } 
-    public void crearProducto() { 
+    public void crearNaturalNumber() { 
        IO.out.println("Creado NaturalN number: " + this.creador.create().getTextValue()); 
     } 
     public static void main(String[] args) { 
