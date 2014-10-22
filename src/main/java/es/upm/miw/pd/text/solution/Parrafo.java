@@ -1,11 +1,20 @@
 package es.upm.miw.pd.text.solution;
 
-public class Parrafo extends Compuesto {
+import java.util.List;
 
+public class Parrafo extends Compuesto {
+    public Parrafo(){
+    	
+    }
 	@Override
 	public void add(Componente c) {
-		// TODO Auto-generated method stub
-		
+		if(c.isComposite()){
+			throw new UnsupportedOperationException("Operación no soportada");
+		}
+		else
+		{
+			this.componentes.add(c);
+		}
 	}
 
 	@Override
